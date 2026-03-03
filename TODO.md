@@ -1,5 +1,6 @@
 # ToDo NeoVim
 
+- modifier ce fichier space sn !
 - où mettre mon code custom ?
 - comment avoir du lazzy install de LSP  comme l'autre truc nvim ?
 - néo-rétro
@@ -12,3 +13,4 @@
 - space sh
 - space j'ai pas comme lui...
 - change theme
+- regarder aussi l'autre vidéo (search todo par exemple)
