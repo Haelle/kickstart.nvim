@@ -9,5 +9,8 @@ return {
   {
     'onlyati/quadlet-lsp.nvim',
     lazy = false,
+    opts = {
+      cmd = '/usr/bin/quadlet-lsp',
+    },
   },
 }
