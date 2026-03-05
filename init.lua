@@ -612,6 +612,24 @@ require('lazy').setup({
         omnisharp = {},
         docker_language_server = {},
         dockerls = {},
+        yamlls = {
+          settings = {
+            yaml = {
+              validate = true,
+              schemaStore = {
+                enable = true,
+              },
+              schemas = {
+                ['https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.28.0/pod.json'] = {
+                  '*.k8s.yaml',
+                  '*.k8s.yml',
+                  '*.k3s.yaml',
+                  '*.k3s.yml',
+                },
+              },
+            },
+          },
+        },
         -- clangd = {},
         -- gopls = {},
         pyright = {},
