@@ -1,8 +1,8 @@
 # ToDo NeoVim
 
-- Claude Code
 - change theme
-- regarder aussi l'autre vidéo (search todo par exemple)
+- regarder la vidéo
+- regarder aussi l'autre (search todo par exemple)
 
 Long run :
 

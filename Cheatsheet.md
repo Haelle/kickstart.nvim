@@ -18,6 +18,13 @@
 | Ctrl v       | Dans telescope ouvrir fichier en split vertical     |
 | Ctrl t       | Dans telescope ouvrir fichier dans un nouvel onglet |
 
+## Claude
+
+| Commande     | Description                                                        |
+| ------------ | ------------------------------------------------------------------ |
+| \<space\> ac | [A]I [C]laude - open Claude Code split                             |
+| \<space\> as | [A]I [S]election - when in visual mode selection send it to Claude |
+
 ## LSP
 
 Via `:LspInfo` il est possible de savoir quel LSP est détecté/activé pour le fichier actuel. Il y a aussi des warnings sur les problèmes de configuration.
