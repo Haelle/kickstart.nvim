@@ -237,9 +237,7 @@ vim.api.nvim_create_autocmd('BufReadPost', {
   callback = function(event)
     local mark = vim.api.nvim_buf_get_mark(event.buf, '"')
     local line_count = vim.api.nvim_buf_line_count(event.buf)
-    if mark[1] > 0 and mark[1] <= line_count then
-      vim.api.nvim_win_set_cursor(0, mark)
-    end
+    if mark[1] > 0 and mark[1] <= line_count then vim.api.nvim_win_set_cursor(0, mark) end
   end,
 })
 
@@ -697,6 +695,7 @@ require('lazy').setup({
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
         -- You can add other tools here that you want Mason to install
+        'bash-language-server',
         'lua-language-server',
         'markdownlint',
         'prettier',

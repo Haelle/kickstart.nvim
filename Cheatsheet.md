@@ -4,10 +4,10 @@
 
 | Commande     | Description                                |
 | ------------ | ------------------------------------------ |
+| \<space\> sh | [S]earch [H]elp                            |
 | \<space\> sn | [S]earch (telescope) [N]eovim files        |
 | \<C-y\>      | [Y]es, accept selection in completion mode |
 | \<space\> sk | [S]earch [K]eymaps/shortcuts               |
-| \<space\> sh | [S]earch [H]elp                            |
 
 ## Telescope
 
@@ -18,13 +18,23 @@
 | Ctrl v       | Dans telescope ouvrir fichier en split vertical     |
 | Ctrl t       | Dans telescope ouvrir fichier dans un nouvel onglet |
 
+## LSP Shortcuts
+
+| Commande | Description                |
+| -------- | -------------------------- |
+| grd      | [G]o to [R] [D]efinition   |
+| grr      | [G]o to [R] [R]ereferences |
+
 ## Shortcuts
 
-| Commande | Description                                          |
-| -------- | ---------------------------------------------------- |
-| \<C-o\>  | previous file                                        |
-| Tab      | next file                                            |
-| gaip     | [A]lign [I]nside current [P]aragraph (align tableau) |
+| Commande | Description                                                                 |
+| -------- | --------------------------------------------------------------------------- |
+| \<C-o\>  | previous file                                                               |
+| Tab      | next file                                                                   |
+| gaip     | [A]lign [I]nside current [P]aragraph (align tableau) useless with formatter |
+| u        | undo                                                                        |
+| Ctrl r   | redo                                                                        |
+| K (maj)  | Show information on this (code def)                                         |
 
 ## Installtions complémentaires
 

@@ -1,8 +1,7 @@
 # ToDo NeoVim
 
-- LSP nav
-- Claude Code
 - change theme
+- Claude Code
 - regarder aussi l'autre vidéo (search todo par exemple)
 - réduire taille par défaut de neo tree
 - LSP/Formatter/Linter à tester:
