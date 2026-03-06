@@ -13,7 +13,9 @@
 
 | Commande     | Description                                         |
 | ------------ | --------------------------------------------------- |
-| \<space\> ss | [S]earch [S]elect telescope                         |
+| \<space\> sg | [S]earch [G]rep in file                             |
+| \<space\> sf | [S]earch [F]iles telescope                          |
+| \<space\> ss | [S]earch [S]elect telescope - search symbols        |
 | Ctrl x       | Dans telescope ouvrir fichier en split horizontal   |
 | Ctrl v       | Dans telescope ouvrir fichier en split vertical     |
 | Ctrl t       | Dans telescope ouvrir fichier dans un nouvel onglet |
