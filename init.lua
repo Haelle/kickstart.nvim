@@ -619,7 +619,14 @@ require('lazy').setup({
       --  See `:help lsp-config` for information about keys and how to configure
       ---@type table<string, vim.lsp.Config>
       local servers = {
-        bashls = {},
+        bashls = {
+          cmd = {
+            vim.fn.expand '~/.asdf/shims/node',
+            vim.fn.expand '~/.local/share/nvim/mason/packages/bash-language-server/node_modules/.bin/bash-language-server',
+            'start',
+          },
+          filetypes = { 'bash', 'sh' },
+        },
         omnisharp = {},
         docker_language_server = {},
         dockerls = {},

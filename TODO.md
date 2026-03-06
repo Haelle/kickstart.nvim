@@ -1,5 +1,6 @@
 # ToDo NeoVim
 
+- virer les warning dans :LspInfo
 - change theme
 - Claude Code
 - regarder aussi l'autre vidéo (search todo par exemple)
