@@ -18,23 +18,31 @@
 | Ctrl v       | Dans telescope ouvrir fichier en split vertical     |
 | Ctrl t       | Dans telescope ouvrir fichier dans un nouvel onglet |
 
-## LSP Shortcuts
+## LSP
+
+Via `:LspInfo` il est possible de savoir quel LSP est détecté/activé pour le fichier actuel. Il y a aussi des warnings sur les problèmes de configuration.
+Les Warning (5) sont corrigés par l'ajout de filetype dans `init.lua` mais les LSP ne le savent pas, d'où les warnings.
+
+### Shortcuts
 
 | Commande | Description                |
 | -------- | -------------------------- |
 | grd      | [G]o to [R] [D]efinition   |
 | grr      | [G]o to [R] [R]ereferences |
 
+### Bash LSP
+
+/!\ Bash supporte très mal les LSP, le Go to Definition ne marche que quand les `source xxx` n'ont pas de variables ça limites les possibilités...
+
 ## Shortcuts
 
-| Commande | Description                                                                 |
-| -------- | --------------------------------------------------------------------------- |
-| \<C-o\>  | previous file                                                               |
-| Tab      | next file                                                                   |
-| gaip     | [A]lign [I]nside current [P]aragraph (align tableau) useless with formatter |
-| u        | undo                                                                        |
-| Ctrl r   | redo                                                                        |
-| K (maj)  | Show information on this (code def)                                         |
+| Commande | Description                         |
+| -------- | ----------------------------------- |
+| \<C-o\>  | previous file                       |
+| Tab      | next file                           |
+| u        | undo                                |
+| Ctrl r   | redo                                |
+| K (maj)  | Show information on this (code def) |
 
 ## Installtions complémentaires
 

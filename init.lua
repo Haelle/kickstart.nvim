@@ -93,6 +93,30 @@ vim.g.maplocalleader = ' '
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = false
 
+-- [[ Custom filetypes ]]
+-- help LSP to detect when to be enabled
+vim.filetype.add {
+  filename = {
+    ['docker-compose.yml'] = 'yaml.docker-compose',
+    ['docker-compose.yaml'] = 'yaml.docker-compose',
+    ['compose.yml'] = 'yaml.docker-compose',
+    ['compose.yaml'] = 'yaml.docker-compose',
+    ['.gitlab-ci.yml'] = 'yaml.gitlab',
+    ['.gitlab-ci.yaml'] = 'yaml.gitlab',
+    ['values.yaml'] = 'yaml.helm-values',
+    ['values.yml'] = 'yaml.helm-values',
+  },
+  extension = {
+    mdx = 'markdown.mdx',
+  },
+  pattern = {
+    ['docker%-compose%..*%.ya?ml'] = 'yaml.docker-compose',
+    ['compose%..*%.ya?ml'] = 'yaml.docker-compose',
+    ['%.gitlab%-ci%..*%.ya?ml'] = 'yaml.gitlab',
+    ['values%..*%.ya?ml'] = 'yaml.helm-values',
+  },
+}
+
 -- [[ Setting options ]]
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!

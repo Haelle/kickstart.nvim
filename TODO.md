@@ -1,10 +1,11 @@
 # ToDo NeoVim
 
-- virer les warning dans :LspInfo
-- change theme
 - Claude Code
+- change theme
 - regarder aussi l'autre vidéo (search todo par exemple)
-- réduire taille par défaut de neo tree
+
+Long run :
+
 - LSP/Formatter/Linter à tester:
   - svelte,
   - c#,
