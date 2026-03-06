@@ -25,6 +25,17 @@
 | \<space\> ac | [A]I [C]laude - open Claude Code split                             |
 | \<space\> as | [A]I [S]election - when in visual mode selection send it to Claude |
 
+## Diagnostics
+
+| Commande     | Description                                        |
+| ------------ | -------------------------------------------------- |
+| gra          | [G]o to code [A]ctions - open code actions options |
+| \<space\> q  | Open diagnostic [Q]uick fix list                   |
+| \<space\> sd | [S]earch for [D]iagnostics in folder               |
+| \<C-w\> d    | Display full [D]iagnotic under caret               |
+| [d           | Go to prev [Diagnostic]                            |
+| ]d           | Go to next [Diagnostic]                            |
+
 ## LSP
 
 Via `:LspInfo` il est possible de savoir quel LSP est détecté/activé pour le fichier actuel. Il y a aussi des warnings sur les problèmes de configuration.
@@ -41,7 +52,7 @@ Les Warning (5) sont corrigés par l'ajout de filetype dans `init.lua` mais les 
 
 /!\ Bash supporte très mal les LSP, le Go to Definition ne marche que quand les `source xxx` n'ont pas de variables ça limites les possibilités...
 
-## Shortcuts
+## Other Shortcuts
 
 | Commande             | Description                         |
 | -------------------- | ----------------------------------- |

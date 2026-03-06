@@ -2,6 +2,7 @@ return {
   'mrjones2014/smart-splits.nvim',
   config = function()
     local splits = require 'smart-splits'
+    ---@diagnostic disable-next-line: missing-fields
     splits.setup {
       default_amount = 1,
     }
