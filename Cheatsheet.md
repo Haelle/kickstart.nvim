@@ -36,13 +36,15 @@ Les Warning (5) sont corrigés par l'ajout de filetype dans `init.lua` mais les 
 
 ## Shortcuts
 
-| Commande | Description                         |
-| -------- | ----------------------------------- |
-| \<C-o\>  | previous file                       |
-| Tab      | next file                           |
-| u        | undo                                |
-| Ctrl r   | redo                                |
-| K (maj)  | Show information on this (code def) |
+| Commande             | Description                         |
+| -------------------- | ----------------------------------- |
+| \<C-o\>              | previous file                       |
+| Tab                  | next file                           |
+| u                    | undo                                |
+| \<C-r\>              | redo                                |
+| K (maj)              | Show information on this (code def) |
+| \<C-w\> \<Arrows\>   | Move cursor into another split      |
+| \<C-r\> \<S-Arrows\> | Move split                          |
 
 ## Installtions complémentaires
 

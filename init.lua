@@ -242,6 +242,12 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 -- vim.keymap.set("n", "<C-S-j>", "<C-w>J", { desc = "Move window to the lower" })
 -- vim.keymap.set("n", "<C-S-k>", "<C-w>K", { desc = "Move window to the upper" })
 
+-- Move splits with Ctrl+w then Shift+arrows
+vim.keymap.set('n', '<C-w><S-Left>', '<C-w>H', { desc = 'Move window to the left' })
+vim.keymap.set('n', '<C-w><S-Right>', '<C-w>L', { desc = 'Move window to the right' })
+vim.keymap.set('n', '<C-w><S-Down>', '<C-w>J', { desc = 'Move window down' })
+vim.keymap.set('n', '<C-w><S-Up>', '<C-w>K', { desc = 'Move window up' })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
