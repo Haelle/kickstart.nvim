@@ -654,6 +654,7 @@ require('lazy').setup({
         -- But for many setups, the LSP (`ts_ls`) will work just fine
         -- ts_ls = {},
 
+        marksman = {},
         stylua = {}, -- Used to format Lua code
 
         -- Special Lua Config, as recommended by neovim help docs
@@ -698,6 +699,7 @@ require('lazy').setup({
         -- You can add other tools here that you want Mason to install
         'lua-language-server',
         'markdownlint',
+        'prettier',
         'stylua',
         'tree-sitter-cli',
       })
@@ -743,6 +745,7 @@ require('lazy').setup({
       end,
       formatters_by_ft = {
         lua = { 'stylua' },
+        markdown = { 'prettier' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --

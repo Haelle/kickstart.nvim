@@ -1,15 +1,15 @@
 # ToDo NeoVim
 
-- change theme
+- LSP nav
 - Claude Code
+- change theme
 - regarder aussi l'autre vidéo (search todo par exemple)
-- néo-rétro ???
 - réduire taille par défaut de neo tree
-- LSP/Formatter/Linter à tester: 
-    - svelte, 
-    - c#, 
-    - python, 
-    - ruby
-    - yaml(s)
-    - json
-
+- LSP/Formatter/Linter à tester:
+  - svelte,
+  - c#,
+  - python,
+  - ruby
+  - yaml(s)
+  - json
+  - markdown
