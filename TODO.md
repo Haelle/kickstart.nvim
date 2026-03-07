@@ -1,7 +1,5 @@
 # ToDo NeoVim
 
-- change theme
-- regarder la vidéo
 - regarder aussi l'autre (search todo par exemple)
 
 Long run :

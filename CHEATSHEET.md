@@ -65,6 +65,7 @@ Les Warning (5) sont corrigés par l'ajout de filetype dans `init.lua` mais les 
 | K (maj)              | Show information on this (code def) |
 | \<C-w\> \<Arrows\>   | Move cursor into another split      |
 | \<C-r\> \<S-Arrows\> | Move split                          |
+| \<space\> st         | [S]earch for [T]odos                |
 
 ## Installtions complémentaires
 
