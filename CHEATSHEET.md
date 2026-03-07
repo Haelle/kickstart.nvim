@@ -2,41 +2,41 @@
 
 ## Général
 
-| Commande     | Description                                |
-| ------------ | ------------------------------------------ |
-| \<space\> sh | [S]earch [H]elp                            |
-| \<space\> sn | [S]earch (telescope) [N]eovim files        |
-| \<C-y\>      | [Y]es, accept selection in completion mode |
-| \<space\> sk | [S]earch [K]eymaps/shortcuts               |
+| Commande    | Description                                |
+| ----------- | ------------------------------------------ |
+| \<space\>sh | [S]earch [H]elp                            |
+| \<space\>sn | [S]earch (telescope) [N]eovim files        |
+| \<C-y\>     | [Y]es, accept selection in completion mode |
+| \<space\>sk | [S]earch [K]eymaps/shortcuts               |
 
 ## Telescope
 
-| Commande     | Description                                         |
-| ------------ | --------------------------------------------------- |
-| \<space\> sg | [S]earch [G]rep in file                             |
-| \<space\> sf | [S]earch [F]iles telescope                          |
-| \<space\> ss | [S]earch [S]elect telescope - search symbols        |
-| Ctrl x       | Dans telescope ouvrir fichier en split horizontal   |
-| Ctrl v       | Dans telescope ouvrir fichier en split vertical     |
-| Ctrl t       | Dans telescope ouvrir fichier dans un nouvel onglet |
+| Commande    | Description                                         |
+| ----------- | --------------------------------------------------- |
+| \<space\>sg | [S]earch [G]rep in file                             |
+| \<space\>sf | [S]earch [F]iles telescope                          |
+| \<space\>ss | [S]earch [S]elect telescope - search symbols        |
+| Ctrl x      | Dans telescope ouvrir fichier en split horizontal   |
+| Ctrl v      | Dans telescope ouvrir fichier en split vertical     |
+| Ctrl t      | Dans telescope ouvrir fichier dans un nouvel onglet |
 
 ## Claude
 
-| Commande     | Description                                                        |
-| ------------ | ------------------------------------------------------------------ |
-| \<space\> ac | [A]I [C]laude - open Claude Code split                             |
-| \<space\> as | [A]I [S]election - when in visual mode selection send it to Claude |
+| Commande    | Description                                                        |
+| ----------- | ------------------------------------------------------------------ |
+| \<space\>ac | [A]I [C]laude - open Claude Code split                             |
+| \<space\>as | [A]I [S]election - when in visual mode selection send it to Claude |
 
 ## Diagnostics
 
-| Commande     | Description                                        |
-| ------------ | -------------------------------------------------- |
-| gra          | [G]o to code [A]ctions - open code actions options |
-| \<space\> q  | Open diagnostic [Q]uick fix list                   |
-| \<space\> sd | [S]earch for [D]iagnostics in folder               |
-| \<C-w\> d    | Display full [D]iagnotic under caret               |
-| [d           | Go to prev [Diagnostic]                            |
-| ]d           | Go to next [Diagnostic]                            |
+| Commande    | Description                                        |
+| ----------- | -------------------------------------------------- |
+| gra         | [G]o to code [A]ctions - open code actions options |
+| \<space\>q  | Open diagnostic [Q]uick fix list                   |
+| \<space\>sd | [S]earch for [D]iagnostics in folder               |
+| \<C-w\>d    | Display full [D]iagnotic under caret               |
+| [d          | Go to prev [Diagnostic]                            |
+| ]d          | Go to next [Diagnostic]                            |
 
 ## LSP
 
@@ -56,25 +56,25 @@ Les Warning (5) sont corrigés par l'ajout de filetype dans `init.lua` mais les 
 
 ## Spectre (Search & Replace)
 
-| Commande     | Description                                   |
-| ------------ | --------------------------------------------- |
-| \<space\> sR | [S]earch and [R]eplace (Spectre) (open/close) |
-| dd           | Toggle on/off un remplacement (une ligne)     |
-| \<space\> R  | Replace all                                   |
-| \<space\> rc | Replace current (une seule occurrence)        |
+| Commande    | Description                                   |
+| ----------- | --------------------------------------------- |
+| \<space\>sR | [S]earch and [R]eplace (Spectre) (open/close) |
+| dd          | Toggle on/off un remplacement (une ligne)     |
+| \<space\>R  | Replace all                                   |
+| \<space\>rc | Replace current (une seule occurrence)        |
 
 ## Other Shortcuts
 
-| Commande             | Description                         |
-| -------------------- | ----------------------------------- |
-| \<C-o\>              | previous file                       |
-| Tab                  | next file                           |
-| u                    | undo                                |
-| \<C-r\>              | redo                                |
-| K (maj)              | Show information on this (code def) |
-| \<C-w\> \<Arrows\>   | Move cursor into another split      |
-| \<C-r\> \<S-Arrows\> | Move split                          |
-| \<space\> st         | [S]earch for [T]odos                |
+| Commande            | Description                         |
+| ------------------- | ----------------------------------- |
+| \<C-o\>             | previous file                       |
+| Tab                 | next file                           |
+| u                   | undo                                |
+| \<C-r\>             | redo                                |
+| K (maj)             | Show information on this (code def) |
+| \<C-w\>\<Arrows\>   | Move cursor into another split      |
+| \<C-r\>\<S-Arrows\> | Move split                          |
+| \<space\>st         | [S]earch for [T]odos                |
 
 ## Installtions complémentaires
 
