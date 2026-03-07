@@ -13,4 +13,12 @@ return {
       cmd = '/usr/bin/quadlet-lsp',
     },
   },
+  {
+    'nvim-pack/nvim-spectre',
+    dependencies = { 'nvim-lua/plenary.nvim' },
+    keys = {
+      { '<leader>sR', function() require('spectre').toggle() end, desc = '[S]earch and [R]eplace (Spectre)' },
+    },
+    opts = {},
+  },
 }

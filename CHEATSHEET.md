@@ -54,6 +54,15 @@ Les Warning (5) sont corrigés par l'ajout de filetype dans `init.lua` mais les 
 
 /!\ Bash supporte très mal les LSP, le Go to Definition ne marche que quand les `source xxx` n'ont pas de variables ça limites les possibilités...
 
+## Spectre (Search & Replace)
+
+| Commande     | Description                                   |
+| ------------ | --------------------------------------------- |
+| \<space\> sR | [S]earch and [R]eplace (Spectre) (open/close) |
+| dd           | Toggle on/off un remplacement (une ligne)     |
+| \<space\> R  | Replace all                                   |
+| \<space\> rc | Replace current (une seule occurrence)        |
+
 ## Other Shortcuts
 
 | Commande             | Description                         |

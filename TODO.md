@@ -1,7 +1,5 @@
 # ToDo NeoVim
 
-- regarder aussi l'autre (search todo par exemple)
-
 Long run :
 
 - LSP/Formatter/Linter à tester:
