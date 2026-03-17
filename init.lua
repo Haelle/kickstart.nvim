@@ -689,6 +689,7 @@ require('lazy').setup({
         -- But for many setups, the LSP (`ts_ls`) will work just fine
         -- ts_ls = {},
 
+        svelte = {},
         marksman = {},
         stylua = {}, -- Used to format Lua code
 
@@ -734,10 +735,12 @@ require('lazy').setup({
       vim.list_extend(ensure_installed, {
         -- You can add other tools here that you want Mason to install
         'bash-language-server',
+        'svelte-language-server',
         'lua-language-server',
         'markdownlint',
         'prettier',
         'stylua',
+        'svelte',
         'tree-sitter-cli',
       })
 
