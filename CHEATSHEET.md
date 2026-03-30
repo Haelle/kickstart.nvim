@@ -22,10 +22,14 @@
 
 ## Claude
 
-| Commande    | Description                                                        |
-| ----------- | ------------------------------------------------------------------ |
-| \<space\>ac | [A]I [C]laude - open Claude Code split                             |
-| \<space\>as | [A]I [S]election - when in visual mode selection send it to Claude |
+| Commande       | Description                                                        |
+| -------------- | ------------------------------------------------------------------ |
+| \<space\>ac    | [A]I [C]laude - open Claude Code split                             |
+| \<space\>as    | [A]I [S]election - when in visual mode selection send it to Claude |
+| \<space\>af    | [A]I [F]ocus Claude                                                |
+| \<space\>aa    | [A]I [A]ccept Claude diff                                          |
+| \<space\>ad    | [A]I [D]eny Claude diff                                            |
+| \<Esc\>\<Esc\> | Quit Claude focus                                                  |
 
 ## Diagnostics
 
