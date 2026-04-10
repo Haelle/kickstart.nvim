@@ -55,6 +55,7 @@ return {
       ensure_installed = {
         -- Update this to ensure that you have the debuggers for the langs you want
         'delve',
+        'coreclr',
       },
     }
 
@@ -104,6 +105,30 @@ return {
         -- On Windows delve must be run attached or it crashes.
         -- See https://github.com/leoluz/nvim-dap-go/blob/main/README.md#configuring
         detached = vim.fn.has 'win32' == 0,
+      },
+    }
+
+    -- .NET / C# debugger (netcoredbg)
+    dap.adapters.coreclr = {
+      type = 'executable',
+      command = vim.fn.stdpath 'data' .. '/mason/bin/netcoredbg',
+      args = { '--interpreter=vscode' },
+    }
+
+    dap.configurations.cs = {
+      {
+        type = 'coreclr',
+        name = 'Launch .NET App',
+        request = 'launch',
+        program = function()
+          return vim.fn.input('Path to dll: ', vim.fn.getcwd() .. '/bin/Debug/', 'file')
+        end,
+      },
+      {
+        type = 'coreclr',
+        name = 'Attach to process',
+        request = 'attach',
+        processId = require('dap.utils').pick_process,
       },
     }
   end,

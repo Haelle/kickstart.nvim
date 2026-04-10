@@ -538,7 +538,12 @@ require('lazy').setup({
         ---@module 'mason.settings'
         ---@type MasonSettings
         ---@diagnostic disable-next-line: missing-fields
-        opts = {},
+        opts = {
+          registries = {
+            'github:mason-org/mason-registry',
+            'github:Crashdummyy/mason-registry',
+          },
+        },
       },
       -- Maps LSP server names between nvim-lspconfig and Mason package names.
       'mason-org/mason-lspconfig.nvim',
@@ -657,7 +662,7 @@ require('lazy').setup({
           },
           filetypes = { 'bash', 'sh' },
         },
-        omnisharp = {},
+        -- omnisharp replaced by roslyn.nvim (see lua/custom/plugins/roslyn.lua)
         docker_language_server = {},
         dockerls = {},
         yamlls = {
@@ -742,6 +747,7 @@ require('lazy').setup({
         'stylua',
         'svelte',
         'tree-sitter-cli',
+        'roslyn',
       })
 
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
@@ -811,18 +817,11 @@ require('lazy').setup({
           if vim.fn.has 'win32' == 1 or vim.fn.executable 'make' == 0 then return end
           return 'make install_jsregexp'
         end)(),
-        dependencies = {
-          -- `friendly-snippets` contains a variety of premade snippets.
-          --    See the README about individual language/framework/plugin snippets:
-          --    https://github.com/rafamadriz/friendly-snippets
-          -- {
-          --   'rafamadriz/friendly-snippets',
-          --   config = function()
-          --     require('luasnip.loaders.from_vscode').lazy_load()
-          --   end,
-          -- },
-        },
-        opts = {},
+        config = function()
+          local luasnip = require 'luasnip'
+          luasnip.setup {}
+          require('luasnip.loaders.from_lua').lazy_load()
+        end,
       },
     },
     ---@module 'blink.cmp'
@@ -1002,7 +1001,7 @@ require('lazy').setup({
   --  Here are some example plugins that I've included in the Kickstart repository.
   --  Uncomment any of the lines below to enable them (you will need to restart nvim).
   --
-  -- require 'kickstart.plugins.debug',
+  require 'kickstart.plugins.debug',
   require 'kickstart.plugins.indent_line',
   require 'kickstart.plugins.lint',
   -- require 'kickstart.plugins.autopairs',
