@@ -25,6 +25,14 @@ return {
 
     -- Add your own debuggers here
     'leoluz/nvim-dap-go',
+
+    -- Unity debugger (vstuc adapter)
+    {
+      'ownself/nvim-dap-unity',
+      build = function()
+        require('nvim-dap-unity').install()
+      end,
+    },
   },
   keys = {
     -- Basic debugging keymaps, feel free to change to your liking!
@@ -115,7 +123,8 @@ return {
       args = { '--interpreter=vscode' },
     }
 
-    dap.configurations.cs = {
+    dap.configurations.cs = dap.configurations.cs or {}
+    vim.list_extend(dap.configurations.cs, {
       {
         type = 'coreclr',
         name = 'Launch .NET App',
@@ -130,6 +139,6 @@ return {
         request = 'attach',
         processId = require('dap.utils').pick_process,
       },
-    }
+    })
   end,
 }
