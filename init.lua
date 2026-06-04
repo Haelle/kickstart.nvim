@@ -273,9 +273,10 @@ vim.api.nvim_create_autocmd('BufReadPost', {
 
 -- Highlight whole lines containing the '@@>' marker
 vim.api.nvim_set_hl(0, 'ArrowMarker', { fg = '#F7768E', bg = '#392835', bold = true })
-vim.api.nvim_create_autocmd({ 'BufWinEnter', 'WinNew' }, {
-  desc = "Highlight lines containing '@@>'",
+vim.api.nvim_create_autocmd('FileType', {
+  desc = "Highlight lines containing '@@>' in markdown",
   group = vim.api.nvim_create_augroup('arrow-marker', { clear = true }),
+  pattern = 'markdown',
   callback = function() vim.fn.matchadd('ArrowMarker', '.*@@>.*') end,
 })
 
