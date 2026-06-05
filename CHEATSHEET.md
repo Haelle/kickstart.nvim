@@ -2,12 +2,13 @@
 
 ## Général
 
-| Commande    | Description                                |
-| ----------- | ------------------------------------------ |
-| \<space\>sh | [S]earch [H]elp                            |
-| \<space\>sn | [S]earch (telescope) [N]eovim files        |
-| \<C-y\>     | [Y]es, accept selection in completion mode |
-| \<space\>sk | [S]earch [K]eymaps/shortcuts               |
+| Commande    | Description                                     |
+| ----------- | ----------------------------------------------- |
+| \<space\>sh | [S]earch [H]elp                                 |
+| \<space\>sn | [S]earch (telescope) [N]eovim files             |
+| \<C-y\>     | [Y]es, accept selection in completion mode      |
+| \<space\>sk | [S]earch [K]eymaps/shortcuts                    |
+| y           | [Y]ank Copie la selection dans le presse papier |
 
 ## Telescope
 
@@ -69,19 +70,20 @@ Les Warning (5) sont corrigés par l'ajout de filetype dans `init.lua` mais les 
 
 ## Debug (DAP)
 
-| Commande     | Description                                       |
-| ------------ | ------------------------------------------------- |
-| F5           | Start/Continue debugging                          |
-| F1           | Step Into                                         |
-| F2           | Step Over                                         |
-| F3           | Step Out                                          |
-| F7           | Toggle DAP UI (voir dernière session)             |
-| \<space\> b  | Toggle [B]reakpoint                               |
-| \<space\> B  | Set conditional [B]reakpoint (prompt condition)   |
+| Commande    | Description                                     |
+| ----------- | ----------------------------------------------- |
+| F5          | Start/Continue debugging                        |
+| F1          | Step Into                                       |
+| F2          | Step Over                                       |
+| F3          | Step Out                                        |
+| F7          | Toggle DAP UI (voir dernière session)           |
+| \<space\> b | Toggle [B]reakpoint                             |
+| \<space\> B | Set conditional [B]reakpoint (prompt condition) |
 
 ### .NET (netcoredbg)
 
 Au lancement (F5) dans un fichier `.cs`, deux configs disponibles :
+
 - **Launch .NET App** : demande le chemin vers le `.dll` (par défaut `bin/Debug/`)
 - **Attach to process** : s'attacher à un process .NET en cours
 
@@ -92,6 +94,7 @@ Prérequis : `netcoredbg` installé via `:Mason` (s'installe automatiquement au 
 OmniSharp remplacé par `roslyn.nvim` (le vrai LSP de Roslyn, celui de Rider/VS).
 
 Features activées :
+
 - Inlay hints (`<space> th` pour toggle)
 - Complétion avec imports automatiques
 - Code lens (références, tests)
@@ -103,7 +106,7 @@ Prérequis : SDK .NET installé. Au premier ouverture d'un `.cs`, roslyn.nvim t�
 
 | Snippet | Description                                      |
 | ------- | ------------------------------------------------ |
-| ///     | Block `<summary>` simple                        |
+| ///     | Block `<summary>` simple                         |
 | ///m    | Doc méthode complète (summary + param + returns) |
 | ///p    | Tag `<param>`                                    |
 | ///r    | Tag `<returns>`                                  |
