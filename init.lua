@@ -801,6 +801,7 @@ require('lazy').setup({
       formatters_by_ft = {
         lua = { 'stylua' },
         markdown = { 'prettier' },
+        yaml = { 'prettier' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
@@ -975,7 +976,28 @@ require('lazy').setup({
     branch = 'main',
     -- [[ Configure Treesitter ]] See `:help nvim-treesitter-intro`
     config = function()
-      local parsers = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'c_sharp', 'javascript', 'json', 'markdown', 'markdown_inline', 'python', 'query', 'ruby', 'svelte', 'tsx', 'typescript', 'vim', 'vimdoc', 'yaml' }
+      local parsers = {
+        'bash',
+        'c',
+        'diff',
+        'html',
+        'lua',
+        'luadoc',
+        'c_sharp',
+        'javascript',
+        'json',
+        'markdown',
+        'markdown_inline',
+        'python',
+        'query',
+        'ruby',
+        'svelte',
+        'tsx',
+        'typescript',
+        'vim',
+        'vimdoc',
+        'yaml',
+      }
       require('nvim-treesitter').install(parsers)
       vim.api.nvim_create_autocmd('FileType', {
         callback = function(args)
