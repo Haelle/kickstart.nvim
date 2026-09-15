@@ -130,28 +130,23 @@ examples of adding popularly requested plugins.
 
 ### Claude Code
 
-This repository is a Neovim configuration written in Lua, so Claude Code needs
-the Lua tooling enabled to get real diagnostics instead of guessing.
+`.claude/settings.json` enables the `lua-lsp@claude-plugins-official` plugin for
+anyone opening this repository with Claude Code, and `.luarc.json` declares the
+LuaJIT runtime and the `vim` global so the language server does not report false
+positives on editor globals. Project conventions for Claude live in
+[CLAUDE.md](CLAUDE.md).
 
-* `.claude/settings.json` (committed) enables the `lua-lsp@claude-plugins-official`
-  plugin for anyone opening this repository with Claude Code. The plugin must
-  already be installed on the machine, a repository cannot fetch it on demand.
-* `lua-language-server` is not on npm, install it from the GitHub releases:
+The plugin has to be installed on the machine first — a repository can activate
+one, not fetch it. `lua-language-server` is not on npm, it comes from the GitHub
+releases:
 
-  ```bash
-  LUALS=$(curl -sL https://api.github.com/repos/LuaLS/lua-language-server/releases/latest | jq -r .tag_name)
-  mkdir -p ~/.local/lib/lua-language-server
-  curl -sL "https://github.com/LuaLS/lua-language-server/releases/download/$LUALS/lua-language-server-$LUALS-linux-x64.tar.gz" \
-    | tar xz -C ~/.local/lib/lua-language-server
-  ln -sf ~/.local/lib/lua-language-server/bin/lua-language-server ~/.local/bin/lua-language-server
-  ```
-
-* `.luarc.json` (committed, unlike upstream kickstart) declares the LuaJIT
-  runtime, the `vim` global and `$VIMRUNTIME/lua` so the language server does
-  not report false positives on editor globals.
-
-See [claude-par-projet.md](https://github.com/Haelle/dotfiles/blob/master/docs/claude-par-projet.md#lua-et-neovim)
-for the per-project Claude Code conventions these files follow.
+```bash
+LUALS=$(curl -sL https://api.github.com/repos/LuaLS/lua-language-server/releases/latest | jq -r .tag_name)
+mkdir -p ~/.local/lib/lua-language-server
+curl -sL "https://github.com/LuaLS/lua-language-server/releases/download/$LUALS/lua-language-server-$LUALS-linux-x64.tar.gz" \
+  | tar xz -C ~/.local/lib/lua-language-server
+ln -sf ~/.local/lib/lua-language-server/bin/lua-language-server ~/.local/bin/lua-language-server
+```
 
 ### FAQ
 
