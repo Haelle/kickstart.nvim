@@ -4,7 +4,7 @@ return {
     local splits = require 'smart-splits'
     ---@diagnostic disable-next-line: missing-fields
     splits.setup {
-      default_amount = 1,
+      resize = { amount = 1 },
     }
 
     vim.keymap.set('n', '<C-Left>', splits.resize_left)
