@@ -113,6 +113,7 @@ vim.filetype.add {
     ['docker%-compose%..*%.ya?ml'] = 'yaml.docker-compose',
     ['compose%..*%.ya?ml'] = 'yaml.docker-compose',
     ['%.gitlab%-ci%..*%.ya?ml'] = 'yaml.gitlab',
+    ['.*nginx.*/.*%.conf'] = 'nginx',
     ['values%..*%.ya?ml'] = 'yaml.helm-values',
   },
 }
